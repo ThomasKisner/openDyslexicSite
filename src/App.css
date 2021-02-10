@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+#output {
+  font-family: "Open-Dyslexic";
+  height: 95vh;
+  width: 95vh;
+  margin: 0 auto;
+}
+
+.textField {
+  width: 95vw;
+  height: 95vh;
+  margin: auto auto;
+  font-family: "Open-Dyslexic";
+}
+
+.clearButton {
+}
+
+.clearButtonDiv {
+  margin: 15px auto;
+  display: flex;
+  justify-content: flex-end;
+  width: 95vw;
+}
