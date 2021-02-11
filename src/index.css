@@ -1,17 +1,13 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Open-Dyslexic", "Segoe UI",
-    "Open-Dyslexic", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+  font-family: -apple-system, BlinkMacSystemFont, "OpenDyslexic", "Segoe UI",
+    "OpenDyslexic", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas,
-    "Open-Dyslexic" "Courier New", monospace;
-}
-
-.openDyslexic {
-  font-family: "Open-Dyslexic";
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
