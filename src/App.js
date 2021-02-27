@@ -11,6 +11,7 @@ import { faMoon as farMoon } from "@fortawesome/free-regular-svg-icons";
 function App() {
   const [text, setText] = useState("");
   const [fontSize, setFontSize] = useState("1rem");
+  const [bold, setBold] = useState(false);
   const { mode } = useDarkmodeContext();
   const themeMode = mode || "light";
   const css = setThemeMode(themeMode);
@@ -30,6 +31,9 @@ function App() {
   return (
     <div className="app">
       <div className="clearButtonDiv">
+        <button onClick={() => setBold(!bold)} className="clearButton">
+          {!bold ? "Make Bold" : "Remove Bold"}
+        </button>
         <button
           onClick={() => fontSizeChange("decrement")}
           className="clearButton"
@@ -53,7 +57,13 @@ function App() {
         </label>
         <FontAwesomeIcon icon={themeMode === "dark" ? fasMoon : farMoon} /> */}
       </div>
-      <TextArea handleInput={handleInput} text={text} fontSize={fontSize} />
+      <TextArea
+        handleInput={handleInput}
+        text={text}
+        fontSize={fontSize}
+        bold={bold}
+      />
+
       <div className="clearButtonDiv">
         <button onClick={() => setText("")} className="clearButton">
           Clear Text

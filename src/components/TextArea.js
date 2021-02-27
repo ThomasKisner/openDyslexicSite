@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-export default function TextArea({ text, handleInput, fontSize }) {
+export default function TextArea({ text, handleInput, fontSize, bold }) {
   // useEffect(() => {
   //   console.log(text);
   // }, [text]);
@@ -10,7 +10,7 @@ export default function TextArea({ text, handleInput, fontSize }) {
       type="text"
       value={text}
       onChange={handleInput}
-      className="textField"
+      className={`textField ${bold ? "bold" : ""}`}
       style={{ fontSize: fontSize }}
       placeholder="....input text here"
     ></textarea>
