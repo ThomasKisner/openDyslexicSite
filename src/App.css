@@ -51,7 +51,7 @@
   min-height: 80vh;
   margin: 0 auto;
   overflow-y: scroll;
-  line-height: 1.5;
+  line-height: 2.5;
 }
 
 .clearButton {
@@ -132,5 +132,4 @@ input:checked + .slider:before {
 
 .bold {
   font-weight: bold;
-  color: "red";
 }
