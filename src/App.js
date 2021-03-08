@@ -28,24 +28,29 @@ function App() {
     setFontSize(`${remValue}rem`);
   };
 
+  const heart = `<3`;
+
   return (
     <div className="app">
       <div className="clearButtonDiv">
-        <button onClick={() => setBold(!bold)} className="clearButton">
-          {!bold ? "Make Bold" : "Remove Bold"}
-        </button>
-        <button
-          onClick={() => fontSizeChange("decrement")}
-          className="clearButton"
-        >
-          - Font Size
-        </button>
-        <button
-          onClick={() => fontSizeChange("increment")}
-          className="clearButton"
-        >
-          + Font Size
-        </button>
+        <h2>i'm proud of you {heart}</h2>
+        <div style={{ display: "flex", justifyContent: "flex-end" }}>
+          <button onClick={() => setBold(!bold)} className="clearButton">
+            {!bold ? "Make Bold" : "Remove Bold"}
+          </button>
+          <button
+            onClick={() => fontSizeChange("decrement")}
+            className="clearButton"
+          >
+            - Font Size
+          </button>
+          <button
+            onClick={() => fontSizeChange("increment")}
+            className="clearButton"
+          >
+            + Font Size
+          </button>
+        </div>
         {/* <label className="switch">
           <input type="checkbox" />
           <span
